@@ -12,7 +12,6 @@ export default function ImageSearch() {
     event.preventDefault();
     if (searchInputRef.current) {
       setSearchValue(searchInputRef.current.value);
-      console.log(searchInputRef.current.value);
     }
   };
 

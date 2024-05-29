@@ -4,6 +4,11 @@ import classes from "./ImageDetails.module.css";
 
 export default function ImageDetails() {
   const { state } = useLocation();
+  console.log("state-->", state);
+
+  if (state === null) {
+    return <p className={classes.error}>Image details Not Found!</p>;
+  }
 
   return (
     <div className={classes["image-details"]}>

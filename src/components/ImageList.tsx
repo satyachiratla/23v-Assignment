@@ -26,7 +26,6 @@ export default function ImageList({ searchValue }: ImageListProps) {
         const data = await fetchPhotos(searchValue, page, itemsPerPage);
         setData(data);
         setDataPerPage(data.slice(0, itemsPerPage));
-        console.log("res--->", data);
       } catch (error) {
         console.error("Error fetching images:", error);
       }
